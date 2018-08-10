@@ -39,15 +39,12 @@ redirect_from:
 
 1. 修改root帐户密码  
 > $ sudo passwd root  
-
 2. 修改配置  
 > $ vim /usr/share/lightdm/lightdm.conf.d/50-ubuntu.conf  
 > // 在末行添加：  
 > greeter-show-manual-login=true  
 > 保存关闭
-
 3. 重启登录以root帐户登录  
-
 4. 如果有错误提示：（读取/root/.profile时发生错误: mesg.ttyname failed 对设备不适当的ioctl操作 作为结果， 会话不会被正确配置）
 
 解决方法：  

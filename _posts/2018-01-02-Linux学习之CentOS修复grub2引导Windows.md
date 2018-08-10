@@ -8,13 +8,15 @@ redirect_from:
   - /2018/01/02/
 ---
 
-### 目录  
+# 目录  
 
 > * [I、安装ntfs-3g](#one)  
 > * [II、修复引导](#two)  
 
-<a name="one"></a>  
-### I、安装ntfs-3g  
+
+<a name="one"></a>
+
+# I、安装ntfs-3g  
 
 由于`Linux`系统不识别`Windows`的`ntfs`分区，所以需要安装一下小插件  
 
@@ -27,7 +29,8 @@ redirect_from:
 > $ yum install ntfs-3g  
 
 
-<a name="two"></a>  
-### II、修复引导  
+<a name="two"></a>
+
+# II、修复引导  
 
 > $ grub2-mkconfig -o /boot/grub2/grub.cfg  

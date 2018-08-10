@@ -8,7 +8,7 @@ redirect_from:
   - /2017/02/13/
 ---
 
-### 目录  
+# 目录  
 
 > * [I、下载内核源码](#one)
 > * [II、配置内核选项](#two)
@@ -17,9 +17,12 @@ redirect_from:
 > * [V、安装内核](#five)
 > * [VI、修改grub](#six)
 
-### 注意：本文以linux-source-4.8.0为例，记得改成自己的版本号  
+注意：本文以linux-source-4.8.0为例，记得改成自己的版本号  
 
-### I、下载内核源码<a name="one"></a>  
+
+<a name="one"></a>
+
+# I、下载内核源码  
 
 一、查找内核：  
 
@@ -42,7 +45,10 @@ redirect_from:
 
 注意：命令下载的内核路径为`/usr/src/linux-source-4.8.0`  
 
-### II、配置内核选项：<a name="two"></a>  
+
+<a name="two"></a>
+
+# II、配置内核选项  
 
 一、解压内核：  
 
@@ -80,15 +86,21 @@ Note：可能需要提示安装相应库，一般执行 apt-get install libncurs
 
 > $ apt-get install libssl-dev
 
-### III、编译内核：<a name="three"></a>  
+
+<a name="three"></a>
+
+# III、编译内核  
 
 5.编译内核（先不改内核吧，等编译通过后再添加io管控的内核代码）
 
-> $	make -j4  
+> $ make -j  
 
 （用make -j带一个参数，可以把项目在进行并行编译，在多核CPU上，适当的进行并行编译还是可以明显提高编译速度的。但并行的任务不宜太多，一般是以CPU的核心数目的两倍为宜。 一般会生成大约2-3个小时吧），该命令会生成内核模块和vmlinuz，initrd.img，Symtem.map文件。
 
-### IV、编译、安装模块：<a name="four"></a>  
+
+<a name="four"></a>
+
+# IV、编译、安装模块  
 
 1.编译模块：  
 
@@ -98,11 +110,17 @@ Note：可能需要提示安装相应库，一般执行 apt-get install libncurs
 
 > $ make modules_install
 
-### V、安装内核：<a name="five"></a>  
+
+<a name="five"></a>
+
+# V、安装内核  
 
 > $ make install
 
-### VI、修改grub：<a name="six"></a>  
+
+<a name="six"></a>
+
+# VI、修改grub  
 修改/etc/default/grub ，让grub菜单显示
 	vim /etc/default/grub
 
@@ -147,4 +165,4 @@ GRUB_TIMEOUT=10
 	刷新grub.cfg
 > $	update-grub2
 
-### reboot
+reboot
