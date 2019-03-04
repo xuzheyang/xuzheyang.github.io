@@ -32,7 +32,7 @@
 　　用`Windows`的小伙伴打开`git-bash`，用`Linux`的小伙伴打开`bash shell`。先来看看有没有一个文件夹叫`.ssh`，如果有删掉。  
 
 > $ ls -A | grep .ssh　　　// 查看有没有  
-> rm .ssh -rf　　　　　　　　// 有就删掉没有跳过  
+> $ rm .ssh -rf　　　　　　　　// 有就删掉没有跳过  
 
 　　删掉之后需要重新建立一个ssh的钥匙，执行命令：  
 
