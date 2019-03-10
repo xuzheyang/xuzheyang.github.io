@@ -16,7 +16,7 @@ redirect_from:
 > $ diskutil list  
 
 下面是我的磁盘信息:  
-![file](https://github.com/xuzheyang/xuzheyang.github.io/raw/master/_pic/2019-03-11/1.png)  
+![file](https://github.com/xuzheyang/xuzheyang.github.io/raw/master/_pic/2019-03-11/diskutil_list.png)  
 
 2.查看分区编号  
 > $ /Applications/VMware\ Fusion.app/Contents/Library/vmware-rawdiskCreator print /dev/disk2  
