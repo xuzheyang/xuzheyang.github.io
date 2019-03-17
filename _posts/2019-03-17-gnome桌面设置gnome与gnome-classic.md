@@ -18,10 +18,11 @@ redirect_from:
 > $ cp /usr/share/xsessions/gnome-classic.desktop /usr/share/xsessions/gnome-classic.desktop.backup  
 > $ vim /usr/share/xsessions/gnome-classic.desktop  
 修改如下：  
+
 ~~~
 #Exec=env GNOME_SHELL_SESSION_MODE=classic gnome-session --session gnome-classic
 Exec=gnome-session
 ~~~
 
-记录对于官房文档的疑惑：  
+记录对于官方文档的疑惑：  
 在修改`/var/lib/AccountsService/users/`路径下的文件后，重启计算机，文件都会恢复原来的文件，导致配置失效，个人猜测这些文件是开机后自动重新生成的。但是官方文档中描述的又不是这样，无法理解。
