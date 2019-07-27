@@ -29,7 +29,7 @@ Nr      Start       Size Type Id Sytem
 ~~~ 
 
 3.然后创建`VMDK`文件  
-> $ /Applications/VMware\ Fusion.app/Contents/Library/vmware-rawdiskCreator create /dev/disk2 1 usb ide  
+> $ /Applications/VMware\ Fusion.app/Contents/Library/vmware-rawdiskCreator  create /dev/disk4 fullDevice usb-hdd ide. 
 
 这个时候你会在当前文件夹下得到一个文件`usb-hdd.vmdk`  
 
