@@ -25,12 +25,10 @@ AutomaticLogin=root
 
 # `Mate`桌面  
 
-> $ sudo nano /usr/share/lightdm/lightdm.conf.d/60-lightdm-gtk-greeter.conf  
+> $ vim  /etc/lightdm/lightdm.conf 
 
-添加下面内容：  
+修改下面内容：  
 
 ~~~
-[SeatDefaults]
-greeter-session=lightdm-gtk-greeter 
 autologin-user=root
 ~~~
