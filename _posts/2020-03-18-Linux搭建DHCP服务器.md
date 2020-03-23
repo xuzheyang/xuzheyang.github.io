@@ -1,11 +1,3 @@
-<!-- 
- - @Author:		徐哲阳
- - @EMail:		xuzheyangchn@foxmail.com
- - @FileName:	2020-03-18-Linux搭建DHCP服务器.md
- - @Created:	2020-03-18 21:55:45
- - @Description: 
- -->
-
 ---
 layout: post
 title: "Linux搭建DHCP服务器"
@@ -15,6 +7,7 @@ tags: [Linux , DHCP]
 redirect_from:
   - /2020/03/18/
 ---
+
 
 # 目录  
 
