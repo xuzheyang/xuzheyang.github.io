@@ -46,7 +46,7 @@ redirect_from:
 > or
 > $ sudo apt-get install rapidjson-dev  
 
-3. 安装编译环境  
+3.安装编译环境  
 > $ sudo dnf install openssl-devel gcc gcc-c++ make cmake  
 or 
 > $ sudo apt-get install libssl-dev gcc g++ make cmake  
@@ -66,8 +66,8 @@ or
 
 # IV、编译 patcher-keygen  
 
-$ cd ~/navicat15/navicat-keygen  
-$ make all  
+> $ cd ~/navicat15/navicat-keygen  
+> $ make all  
 
 
 <a name="five"></a>
@@ -96,6 +96,7 @@ $ make all
 > $ mkdir /opt/navicat15  
 > $ cp ~/navicat15/navicat15-premium-cs-patched.AppImage /opt/navicat15  
 > $ vim /opt/navicat15/navicat15-premium.desktop  
+
 ~~~
 [Desktop Entry]
 Comment=navicat15-premium
@@ -110,7 +111,6 @@ Icon=/opt/navicat15/Premium15.png
 ~~~
 
 > $ cp ~/navicat15/navicat15-premium-cs-patched/navicat-icon.png /opt/navicat15/Premium15.png  
-
 > ln -sf /opt/navicat15/navicat15-premium.desktop /usr/share/applications  
 
 
@@ -119,6 +119,7 @@ Icon=/opt/navicat15/Premium15.png
 # VIII、注册 Navicat  
 
 > $ ~/navicat15/navicat-keygen/bin/navicat-keygen --text ~/navicat15/RegPrivateKey.pem  
+
 ~~~
 输入 1. Premium 的序号，回车
 输入 1. Simplified Chinese 的序号，回车
